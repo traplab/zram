@@ -25,7 +25,8 @@ zram.service
 zram.conf(modules-load.d & modprobe.d)
 99-zram.rules
 
-
+Issues:
+Still can't hibernate
 
 Works on Kali..should work on debian and ubuntu(linux with swap allocation on harddisk)
 
