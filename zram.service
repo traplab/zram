@@ -1,0 +1,13 @@
+[Unit]
+Description=Swap with zram
+After=multi-user.target
+
+[Service]
+Type=oneshot 
+RemainAfterExit=true
+ExecStartPre=/usr/local/bin/mkswap.sh
+ExecStart=/usr/local/bin/swapon.sh
+ExecStop=/usr/local/bin/swapoff.sh
+
+[Install]
+WantedBy=multi-user.target
